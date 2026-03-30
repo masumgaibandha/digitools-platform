@@ -3,13 +3,13 @@ import badgeImg from "../../assets/products/design-tool.png";
 import Features from "./Features";
 
 const Cards = ({ card, carts, setCarts, selectedTools, setSelectedTools }) => {
-  const { tag, name, description, price, features } = card;
+  const { tag, name, description, price, features, icon } = card;
   const [isSelected, setIsSelected] = useState(false)
     const handleCartProducts =()=>{
         setIsSelected(true); 
         alert(`${card.name} is Added`)
         const updatedTools = ([...selectedTools, card])
-        console.log(updatedTools.length)
+        // console.log(updatedTools.length)
         setSelectedTools(updatedTools)      
         setCarts(updatedTools.length)
     } 
@@ -21,7 +21,7 @@ const Cards = ({ card, carts, setCarts, selectedTools, setSelectedTools }) => {
             <span className="badge badge-md bg-[#FEF3C6] ">{tag}</span>
           </div>
           <div>
-            <img src={badgeImg} alt="" />
+            <img src={icon} alt="" />
           </div>
           <div className="space-y-3">
             <h2 className="text-2xl font-bold">{name}</h2>

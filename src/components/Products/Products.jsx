@@ -40,7 +40,7 @@ const Products = ({fetchPromise, carts, setCarts}) => {
 
         {selectedType ==="products" ? 
         <ProductCards carts={carts} setCarts={setCarts} cardsData={cardsData} setSelectedTools={setSelectedTools} selectedTools={selectedTools}></ProductCards> : 
-        <SelectedCarts setCarts={setCarts} setSelectedTools={setSelectedTools} selectedTools={selectedTools}></SelectedCarts>}
+        <SelectedCarts setCarts={setCarts} carts={carts} setSelectedTools={setSelectedTools} selectedTools={selectedTools}></SelectedCarts>}
     </div>
   );
 };
