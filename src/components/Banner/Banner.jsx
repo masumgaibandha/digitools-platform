@@ -2,15 +2,22 @@ import React from "react";
 import bannerImg from "../../assets/banner.png";
 import playImg from "../../assets/Play.png";
 
+import { FaRegCircle } from "react-icons/fa";
+
 const Banner = () => {
   return (
     <div>
       <div className="flex justify-between items-center max-w-7xl mx-auto   gap-6">
         <div className="">
           <div className="space-y-3">
-            <p className="font-semibold bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent">
-              New: AI-Powered Tools Available
+            <div className="flex items-center gap-2">
+                <div className="w-3 h-3 bg-[#9514fa] rounded-full">
+
+                </div>
+                <p className="font-semibold bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent ">
+             New: AI-Powered Tools Available
             </p>
+            </div>
             <h1 className="text-7xl font-extrabold text-[#101727]">
               Supercharge Your Digital Workflow
             </h1>
