@@ -28,10 +28,7 @@ const Products = ({fetchPromise}) => {
           Carts (0)
         </button>
       </div>
-      <div>
-        {selectedType === "products" ? <h2 className="text-3xl font-bold pb-3">Products</h2> : <SelectedCarts></SelectedCarts>}
 
-      </div>
       {/* <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-5">
       {
         cardsData.map(card=><ProductCards key={card.id} card={card}  ></ProductCards>
@@ -40,7 +37,7 @@ const Products = ({fetchPromise}) => {
       }
         </div> */}
 
-        <ProductCards cardsData={cardsData}></ProductCards>
+        {selectedType ==="products" ? <ProductCards cardsData={cardsData}></ProductCards> : <SelectedCarts></SelectedCarts>}
     </div>
   );
 };
