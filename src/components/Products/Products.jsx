@@ -1,4 +1,5 @@
 import React from "react";
+import Cards from "./Cards";
 
 const Products = () => {
   return (
@@ -18,7 +19,7 @@ const Products = () => {
           Carts (2)
         </button>
       </div>
-      
+        <Cards></Cards>
     </div>
   );
 };
