@@ -1,6 +1,7 @@
 import React from 'react';
 
-const SelectedCarts = () => {
+const SelectedCarts = ({selectedTools, setSelectedTools}) => {
+    console.log(selectedTools, "selectedTools")
     return (
         <div>
             Selected Carts

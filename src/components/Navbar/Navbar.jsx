@@ -1,7 +1,7 @@
 import React from "react";
 import cartIms from "../../assets/products/shopping-cart.png"
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
   return (
     <div className="bg-base-100 shadow-sm">
       <div className="navbar max-w-7xl mx-auto">
@@ -73,7 +73,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end flex gap-3 items-center">
-            <span><img src={cartIms} alt="" className="w-5" /></span>
+            <span className="flex gap-2">{carts}<img src={cartIms} alt="" className="w-5" /></span>
           <a className="rounded-2xl">Login</a>
           <a className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white py-3 px-4 rounded-2xl">Get Started</a>
         </div>

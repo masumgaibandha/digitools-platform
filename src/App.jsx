@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
@@ -10,14 +10,16 @@ const productFetch = async () => {
 }
 function App() {
 const fetchPromise = productFetch()
-
+const [carts, setCarts] = useState()
   return (
     <>
-      <Navbar></Navbar>
-      <Banner></Banner>
+      <Navbar carts={carts}></Navbar>
+      {/* <Banner></Banner> */}
       
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-        <Products fetchPromise={fetchPromise}></Products>
+        <Products fetchPromise={fetchPromise}
+        carts={carts} setCarts={setCarts}
+        ></Products>
       </Suspense>
       
     </>

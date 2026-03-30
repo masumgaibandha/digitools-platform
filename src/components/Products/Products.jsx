@@ -3,9 +3,10 @@ import ProductCards from "./ProductCards";
 import SelectedCarts from "./SelectedCarts";
 
 
-const Products = ({fetchPromise}) => {
+const Products = ({fetchPromise, carts, setCarts}) => {
     const [selectedType, setSelectedType] = useState('products')
-    console.log(selectedType, "selectedType")
+    const [selectedTools, setSelectedTools] = useState([])
+    // console.log(selectedTools, "selectedTools")
     const cardsData = use(fetchPromise)
    
   return (
@@ -25,7 +26,7 @@ const Products = ({fetchPromise}) => {
         </button>
         <button
         onClick={()=>setSelectedType('carts')} className={`btn  ${selectedType === "carts"? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""} rounded-4xl`}>
-          Carts (0)
+          Carts ({selectedTools.length})
         </button>
       </div>
 
@@ -37,7 +38,9 @@ const Products = ({fetchPromise}) => {
       }
         </div> */}
 
-        {selectedType ==="products" ? <ProductCards cardsData={cardsData}></ProductCards> : <SelectedCarts></SelectedCarts>}
+        {selectedType ==="products" ? 
+        <ProductCards carts={carts} setCarts={setCarts} cardsData={cardsData} setSelectedTools={setSelectedTools} selectedTools={selectedTools}></ProductCards> : 
+        <SelectedCarts setCarts={setCarts} setSelectedTools={setSelectedTools} selectedTools={selectedTools}></SelectedCarts>}
     </div>
   );
 };
