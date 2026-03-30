@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ],
+    "icon": "✏️"
+  },
+  {
+    "id": 3,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline workflows with ready-to-use automation tools.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Workflow automation",
+      "Task scheduling",
+      "No-code integrations"
+    ],
+    "icon": "⚙️"
+  },
+  {
+    "id": 4,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters with modern, recruiter-friendly templates.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "ATS-friendly templates",
+      "Cover letter generator",
+      "Export to PDF"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Booster",
+    "description": "Plan, create, and optimize social media content for all major platforms.",
+    "price": 24,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Content calendar",
+      "Post caption generator",
+      "Hashtag suggestions"
+    ],
+    "icon": "📱"
+  },
+  {
+    "id": 6,
+    "name": "Course Creator Suite",
+    "description": "Build and package online courses with templates, outlines, and engagement tools.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Course outline builder",
+      "Lesson templates",
+      "Student resource pack"
+    ],
+    "icon": "🎓"
+  },
+  {
+    "id": 7,
+    "name": "Ecommerce Starter Kit",
+    "description": "Everything you need to launch and grow an online store with ease.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Product page templates",
+      "Email marketing assets",
+      "Sales funnel guides"
+    ],
+    "icon": "🛒"
+  },
+  {
+    "id": 8,
+    "name": "SEO Optimizer Pro",
+    "description": "Improve search rankings with smart keyword tools and on-page optimization support.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Keyword research",
+      "SEO audit reports",
+      "Content optimization tips"
+    ],
+    "icon": "🔍"
+  },
+  {
+    "id": 9,
+    "name": "Video Content Bundle",
+    "description": "Create engaging video scripts, captions, and promotional assets for your brand.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Video script templates",
+      "Caption generator",
+      "Promo content ideas"
+    ],
+    "icon": "🎥"
+  },
+  {
+    "id": 10,
+    "name": "Freelancer Business Pack",
+    "description": "Professional tools and templates to help freelancers manage clients and grow revenue.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Proposal templates",
+      "Invoice generator",
+      "Client onboarding docs"
+    ],
+    "icon": "💼"
+  }
+]

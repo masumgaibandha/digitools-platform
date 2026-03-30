@@ -1,7 +1,13 @@
-import React from "react";
-import Cards from "./Cards";
+import React, { use, useState } from "react";
+import ProductCards from "./ProductCards";
+import SelectedCarts from "./SelectedCarts";
 
-const Products = () => {
+
+const Products = ({fetchPromise}) => {
+    const [selectedType, setSelectedType] = useState('products')
+    console.log(selectedType, "selectedType")
+    const cardsData = use(fetchPromise)
+   
   return (
     <div className="w-7xl mx-auto">
       <div className="text-center space-y-3">
@@ -12,14 +18,29 @@ const Products = () => {
         </p>
       </div>
       <div className="flex justify-center items-center py-5">
-        <button className=" btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-4xl">
+        <button className={`btn  ${selectedType === "products"? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""} rounded-4xl`}
+        onClick={()=>setSelectedType("products")}
+        >
           Products
         </button>
-        <button className=" btn  rounded-4xl">
-          Carts (2)
+        <button
+        onClick={()=>setSelectedType('carts')} className={`btn  ${selectedType === "carts"? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""} rounded-4xl`}>
+          Carts (0)
         </button>
       </div>
-        <Cards></Cards>
+      <div>
+        {selectedType === "products" ? <h2 className="text-3xl font-bold pb-3">Products</h2> : <SelectedCarts></SelectedCarts>}
+
+      </div>
+      {/* <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-5">
+      {
+        cardsData.map(card=><ProductCards key={card.id} card={card}  ></ProductCards>
+            
+        )
+      }
+        </div> */}
+
+        <ProductCards cardsData={cardsData}></ProductCards>
     </div>
   );
 };

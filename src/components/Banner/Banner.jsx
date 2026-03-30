@@ -49,7 +49,7 @@ const Banner = () => {
           <p className="text-2xl font-semibold">Active Users</p>
         </div>
 
-        <div class="w-px h-14 bg-gray-300"></div>
+        <div className="w-px h-14 bg-gray-300"></div>
 
         <div className="text-white">
           <span className="text-6xl font-extrabold">200+</span>
